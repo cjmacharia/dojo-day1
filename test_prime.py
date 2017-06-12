@@ -8,7 +8,10 @@ def test_output_positive_numers_only(self):
         self.assertTrue(i>0)   
 def test_if_value_is_integer(self):
         with self.assertRaises(TypeError):
-            getPrime('success')                     
+            getPrime('success')      
+def test_if_all_the_values_are_prime(self):
+        result =getPrime(10)
+        self.assertEqual(result,[2,3,5,7],msg="value is not a prime number")                           
 if  __name__=='__main__':
     unittest.main()
 

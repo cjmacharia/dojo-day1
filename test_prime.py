@@ -11,7 +11,9 @@ def test_if_value_is_integer(self):
             getPrime('success')      
 def test_if_all_the_values_are_prime(self):
         result =getPrime(10)
-        self.assertEqual(result,[2,3,5,7],msg="value is not a prime number")                           
+        self.assertEqual(result,[2,3,5,7],msg="value is not a prime number") 
+def test_if_output_list(self):
+            self.assertTrue(type(getPrime(10))==list,msg="output is not a list")                                   
 if  __name__=='__main__':
     unittest.main()
 
